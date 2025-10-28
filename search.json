@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "quarto_book_template",
+    "section": "",
+    "text": "前言\nThis is a Quarto book.\n这是一本Quarto书。\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n要了解更多关于Quarto书籍的信息，请访问 https://quarto.org/docs/books。",
+    "crumbs": [
+      "前言"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  引言",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\n这是一本由 Markdown 和可执行代码创建的书籍。\nSee Knuth (1984) for additional discussion of literate programming.\n关于文学编程的更多讨论，请参见 Knuth (1984)。\n\n\n\n\n\n\nKnuth, Donald E. 1984. 《Literate Programming》. Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>引言</span>"
+    ]
+  },
+  {
+    "objectID": "table.html",
+    "href": "table.html",
+    "title": "2  表格",
+    "section": "",
+    "text": "下面是在quarto中的一些不同类型的表格示例：\nYou can see in 表格 2.1, that this table is from R code…\n\nknitr::kable(head(cars), align = \"c\")\n\n\n\n表格 2.1: CAPTION1\n\n\n\n\n\n\nspeed\ndist\n\n\n\n\n4\n2\n\n\n4\n10\n\n\n7\n4\n\n\n7\n22\n\n\n8\n16\n\n\n9\n10\n\n\n\n\n\n\n\n\n\nknitr::kable(\n  mtcars[1:3, 1:3], align = \"c\")\n\n\n\n\n\nmpg\ncyl\ndisp\n\n\n\n\nMazda RX4\n21.0\n6\n160\n\n\nMazda RX4 Wag\n21.0\n6\n160\n\n\nDatsun 710\n22.8\n4\n108\n\n\n\n\n\n\nknitr::kable(\n  mtcars[1:3, 1:3], align = \"c\")\n\n\n\n\n\n\nmpg\ncyl\ndisp\n\n\n\n\nMazda RX4\n21.0\n6\n160\n\n\nMazda RX4 Wag\n21.0\n6\n160\n\n\nDatsun 710\n22.8\n4\n108",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>表格</span>"
+    ]
+  },
+  {
+    "objectID": "plot.html",
+    "href": "plot.html",
+    "title": "3  画图",
+    "section": "",
+    "text": "The penguins data contains size measurements for penguins from three islands in the Palmer Archipelago, Antarctica.\nThe three species of penguins have quite distinct distributions of physical dimensions (图 3.1).\n\nlibrary(tidyverse, quietly = TRUE)\nlibrary(palmerpenguins)\n\npenguins |&gt;\n  ggplot(aes(x = flipper_length_mm, y = bill_length_mm)) +\n  geom_point(aes(color = species)) +\n  scale_color_manual(\n    values = c(\"darkorange\", \"purple\", \"cyan4\")) +\n  theme_minimal()\n\n\n\n\n\n\n\n图 3.1: Dimensions of penguins across three species.\n\n\n\n\n\n这是另外一个例子（图 3.2）：\n\nlibrary(ggplot2)\n\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n\n\n\n\n\n\n\n图 3.2: Temperature and ozone level.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>画图</span>"
+    ]
+  },
+  {
+    "objectID": "callouts.html",
+    "href": "callouts.html",
+    "title": "4  标注",
+    "section": "",
+    "text": "tip\n\n\n\n这是个小贴士哟🤭\n\n\n使用以下之一代替 tip ： note 、 caution 、 warning 或 important ：\n\n\n\n\n\n\n注释\n\n\n\n做个笔记吧\n\n\n\n\n\n\n\n\ncatuion\n\n\n\nText\n\n\n\n\n\n\n\n\nwarning\n\n\n\n请注意，请注意！\n\n\n\n\n\n\n\n\n重要\n\n\n\n这点非常重要哟",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>标注</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "5  总结",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n总的来说，这本书完全没有内容。\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>总结</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  }
+]
