@@ -1,0 +1,55 @@
+/*-- scss:defaults --*/
+// 导入字体CSS文件
+
+// Base document colors
+$body-bg: #181818;
+$body-color: white;
+$link-color: #75AADB;
+
+$light: #525252;
+
+// Navigation element colors
+$footer-bg: #181818;
+$navbar-bg: #303030;
+$sidebar-bg: #303030;
+
+// Code blocks
+$code-block-bg-alpha: -.8;
+
+// Bootstrap popovers
+$popover-bg: #242424;
+
+// Bootstrap inputs
+$input-bg: #242424;
+
+.mainbox {
+  background: #303030;
+}
+
+.mainbox a {
+  text-decoration: none;
+}
+
+.mainbox h2 {
+  border-bottom-width: 0px;
+  font-weight: lighter;
+}
+
+.cell-output {
+  background-color: #e9ecef;
+  border-radius: 3px;
+}
+
+
+$h1-font-size:          1.35rem !default;
+$h2-font-size:          1.30rem !default;
+$h3-font-size:          1.25em !default;
+$h4-font-size:          1.20rem !default;
+$h5-font-size:          1.19rem !default;
+$h6-font-size:          1.18rem !default;
+$headings-font-weight:  500;
+
+/*-- scss:rules --*/
+$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+

@@ -1,0 +1,139 @@
+project:
+  type: book
+
+book:
+  title: "quarto_book_template"
+  author: "Norah Jones"
+  date: "2024/3/16"
+
+  language: custom_language-zh.yml
+  cover-image: cover.png
+  favicon: cover.png
+  # twitter-card:
+  #   creator: "@tonyituite"
+  #   site: "@tonyituite"
+  page-navigation: true
+  reader-mode: true
+
+  site-url: https://tony2015116.github.io/quarto_book_template/
+  repo-url: https://github.com/tony2015116/quarto_book_template
+  #repo-branch: main
+  repo-actions: [issue] #edit,
+  #downloads: [pdf] #epub
+  #sharing: [twitter]
+
+  search:
+    location: sidebar #navbar
+    type: textbox #overlay
+
+
+  sidebar:
+    style: floating #docked
+    background: light
+    logo: analysis.png
+
+  navbar:
+    right:
+      - icon: person-circle #https://icons.getbootstrap.com/
+        href: https://tony2015116.github.io/
+        aria-label: personal page
+      - icon: twitter
+        href: https://twitter.com/tonyituite
+        #text:
+
+  # page-footer:
+  #   center:
+  #     - text: "About"
+  #       href: about.qmd
+  #     - text: "License"
+  #       href: license.qmd
+  #     - text: "Trademark"
+  #       href: trademark.qmd
+
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - table.qmd
+    - plot.qmd
+    - callouts.qmd
+    - summary.qmd
+    - references.qmd
+
+  # chapters:
+  #   - index.qmd
+  #   - intro.qmd
+  #   - part: part1.qmd
+  #     chapters:
+  #       - chapter1.qmd
+  #   - part: part2.qmd
+  #     chapters:
+  #       - chapter2.1.qmd
+  #       - chapter2.2.qmd
+  #   - summary.qmd
+  #   - references.qmd
+  #https://quarto.org/docs/books/book-structure.html
+
+
+
+bibliography: references.bib
+
+#highlight-style:
+
+#arrow, pygments, tango, espresso, zenburn, kate, monochrome, breezedark, haddock, atom-one, ayu, breeze, dracula, github, gruvbox, monokai, nord, oblivion, printing, radical, solarized, and vim
+format:
+  html:
+    code-overflow: wrap
+    code-tools: true
+    css: styles.css
+    code-copy: true
+    #minimal: true #代码无高亮
+    highlight-style:
+      light: arrow-light.theme
+      dark: arrow-dark.theme
+    theme:
+      light: [cosmo, theme.scss] #cosmo
+      dark: [cosmo, theme-dark.scss] #darkly
+
+    fontsize: 1.2em
+    linestretch: 1.5
+    mainfont: "LXGW WenKai Screen"
+    #monofont:
+    language: custom_language-zh.yml
+    lang: zh
+    html-math-method: katex
+  # pdf:
+  #   #pdf-engine: lualatex #wkhtmltopdf #
+  #   fontsize: 1.2em
+  #   latex-clean: false
+  #   from: markdown+emoji
+  #   keep-tex: true
+  #   documentclass: scrbook #book
+  #   margin-left: 30mm
+  #   margin-right: 30mm
+  #   toc: true
+  #   #mainfont: font-family-sans-serif
+  #   lang: zh
+  #   language: custom_language-zh.yml
+  #   mainfont: "LXGWWenKai"
+  #   monofont: "NotoSansSC"
+  #   mainfontoptions:
+  #     - Path=./fonts/lxgw/,
+  #     - Extension=.ttf,
+  #     - UprightFont=*-Regular,
+  #     - BoldFont=*-Bold
+  #   monofontoptions:
+  #     - Path=./fonts/notosans/,
+  #     - Extension=.ttf,
+  #     - UprightFont=*-Regular,
+  #     - BoldFont=*-Bold
+  #   #fontfamily:
+  #   #sansfant: fontspec
+  #   #mathfont: fontspec
+  #   #CJKmainfont: xecjk
+  #   colorlinks: true
+  #   linestretch: 1.2
+
+editor: visual
+
+# comments:
+#   hypothesis: true

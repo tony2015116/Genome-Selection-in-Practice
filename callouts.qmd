@@ -1,0 +1,33 @@
+# 标注
+
+::: callout-tip
+## tip
+
+这是个小贴士哟🤭
+:::
+
+使用以下之一代替 `tip` ： `note` 、 `caution` 、 `warning` 或 `important` ：
+
+::: callout-note
+## 注释
+
+做个笔记吧
+:::
+
+::: callout-caution
+## catuion
+
+Text
+:::
+
+::: callout-warning
+## warning
+
+请注意，请注意！
+:::
+
+::: callout-important
+## 重要
+
+这点非常重要哟
+:::

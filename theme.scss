@@ -1,0 +1,88 @@
+/*-- scss:defaults --*/
+@import url("https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css");
+// The Cosmo theme sets defaults for hover. Clear the defaults to allow
+// our coloring system to handle this
+$navbar-dark-hover-color:       null;
+$navbar-light-hover-color:      null;
+
+$gray-900: #212529 !default;
+$h1-font-size:          1.35rem !default;
+$h2-font-size:          1.30rem !default;
+$h3-font-size:          1.25em !default;
+$h4-font-size:          1.20rem !default;
+$h5-font-size:          1.19rem !default;
+$h6-font-size:          1.18rem !default;
+$headings-font-weight:  500;
+$body-color:  $gray-900;
+/*-- scss:rules --*/
+
+.layout-example {
+  background: $gray-500;
+  color: $white;
+  text-align: center;
+  margin-bottom: 1em;
+  font-family: $font-family-monospace;
+  font-size: .875em;
+  font-weight: 600;
+  padding-top: 1em;
+  border-radius: 3px;
+}
+
+.left {
+  text-align: left;
+  padding-left: 1em;
+}
+
+.right {
+  text-align: right;
+  padding-right: 1em;
+}
+
+.mainbox {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.mainbox a {
+  font-size: 90%;
+  text-decoration: none;
+}
+
+.mainbox h2 {
+  font-weight: lighter;
+  border-bottom-width: 0px;
+}
+
+.mainbox p {
+  font-weight: lighter;
+  font-size: 80%;
+}
+
+.whitebox h2 {
+  font-weight: lighter;
+  border-bottom-width: 0px;
+}
+
+.whitebox a {
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.whitebox p {
+  font-weight: lighter;
+}
+
+.whitebox h1 {
+  font-weight: lighter;
+  font-size: 170%;
+  padding-bottom: 0.5em;
+}
+
+.co {
+  font-size: .830em;
+  font-weight: 100;
+}
+
+
+$font-family-sans-serif:      "LXGW WenKai Screen", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
