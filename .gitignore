@@ -8,3 +8,9 @@
 .httr-oauth
 .DS_Store
 .quarto
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.toc
+*.tex
